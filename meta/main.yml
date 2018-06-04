@@ -11,5 +11,7 @@ galaxy_info:
   - name: Debian
     versions:
     - all
-  galaxy_tags: [rsyslog]
+  galaxy_tags: 
+   - rsyslog
+   - logserver
 dependencies: []
