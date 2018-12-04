@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - rsyslog
+    - iac-ansible-rsyslog-client
