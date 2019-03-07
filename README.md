@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-rsyslog-client.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-rsyslog-client)
 ---
-# IaC: with [Ansible](https://www.ansible) role to install and configure [OpenLdap](https://www.rsyslog.com/)
+# IaC: with [Ansible](https://www.ansible) role to install and configure [Rsyslog Client](https://www.rsyslog.com/)
 ------------
 
 Description
