@@ -1,16 +1,21 @@
 ---
 # tasks file for rsyslog-client
 
-- name: Instala serviço do rsyslog (OS base Debian)
+- name: "Instala serviço do rsyslog (OS base Debian)"
   when: ansible_os_family == "Debian" 
-  apt: pkg=rsyslog state=installed update_cache=true
+  apt: 
+    pkg: rsyslog 
+    state: installed 
+    update_cache: true
   register: rsyslog_installed
   notify:
     - Start rsyslog
 
-- name: Instala serviço do rsyslog (OS base CentOS/RedHat) 
-  yum: pkg=rsyslog state=installed
-  when: (ansible_os_family == "RedHat")
+- name: "Instala serviço do rsyslog (OS base CentOS/RedHat)"
+  when: (ansible_os_family == "RedHat")v
+  yum: 
+    pkg: rsyslog 
+    state: installed
   register: rsyslog_installed
   notify:
     - Start rsyslog
