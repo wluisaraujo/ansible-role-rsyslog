@@ -15,9 +15,20 @@
   notify:
     - Start rsyslog
 
-- name: Define o arquivo de configuracao do servidor Rsyslog
-  when: rsyslog_installed|success
-  copy: src=etc-rsyslog.conf dest=/etc/rsyslog.conf owner=root group=root mode=0644
+#- name: Define o arquivo de configuracao do servidor Rsyslog
+#  when: rsyslog_installed|success
+#  copy: src=etc-rsyslog.conf dest=/etc/rsyslog.conf owner=root group=root mode=0644
+#  notify:
+#    - Restart rsyslog
+
+- name: "Define o arquivo de configuracao do servidor Rsyslog"
+  when: rsyslog_installed | success
+  template: 
+    src: etc-rsyslog.conf.j2 
+    dest: /etc/rsyslog.conf 
+    owner: root 
+    group: root 
+    mode: 0644
   notify:
     - Restart rsyslog
 ...
