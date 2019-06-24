@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: iac-ansible-rsyslog-client
   author: w.luis.araujo
   description: "Install rsyslog client"
   company: LUSAR | wluisaraujo.github.io
