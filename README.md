@@ -1,4 +1,4 @@
-[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Rsyslog-blue.svg)](https://galaxy.ansible.com/wluisaraujo/iac-ansible-rsyslog-client) [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-rsyslog-client.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-rsyslog-client)
+[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Rsyslog-blue.svg)](https://galaxy.ansible.com/wluisaraujo/iac-ansible-rsyslog-client) [![Build Status](https://travis-ci.org/wluisaraujo/ansible-role-rsyslog.svg?branch=master)](https://travis-ci.org/wluisaraujo/ansible-role-rsyslog)
 ---
 # IaC: with [Ansible](https://www.ansible.com) role to install and configure [Rsyslog Client](https://www.rsyslog.com/)
 ------------
@@ -31,8 +31,8 @@ Example Playbook
   vars:
     - name: value
   roles:
-    - iac-ansible-rsyslog-client
-...    
+    - rsyslog
+...
 ```
 
 ----------------

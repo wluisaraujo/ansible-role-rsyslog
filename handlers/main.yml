@@ -1,5 +1,5 @@
 ---
-### handlers file for rsyslog-client
+### handlers file for rsyslog
 ## SystemD
 - name: Start {{ service_name }}
   systemd:

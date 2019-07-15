@@ -1,5 +1,5 @@
 ---
-# vars file for rsyslog-client
+# vars file for rsyslog
 server_addr: 192.168.200.30
 server_port: 514
 ...
