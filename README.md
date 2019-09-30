@@ -13,6 +13,14 @@ Requirements
 
  *
 
+Installation
+------------
+
+```console
+vagrant@localhost:~$ ansible-galaxy install wluisaraujo.rsyslog
+vagrant@localhost:~$ ansible-galaxy install -r wluisaraujo.rsyslog/requirements.txt
+```
+
 Role Variables
 --------------
 
